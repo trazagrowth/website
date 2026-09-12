@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TRAZA Growth detecta dónde se pierden tus ventas, aplica mejoras concretas y mide resultados con evidencia.">
+  <meta name="theme-color" content="#102A43">
+  <title>TRAZA Growth | Ventas que se pueden demostrar</title>
+  <link id="site-favicon" rel="icon" type="image/png" href="./assets/traza-growth-favicon.png">
+  <link id="site-apple-icon" rel="apple-touch-icon" href="./assets/traza-growth-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#102A43;--teal:#00A6A6;--amber:#F4B942;--paper:#F7F9FC;--white:#F7F9FC;--ink:#102A43;--muted:rgba(16,42,67,.72);--line:rgba(16,42,67,.16);--radius:22px;--shadow:0 18px 55px rgba(16,42,67,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font:18px/1.55 "Source Sans 3",system-ui,sans-serif;background:var(--white)}a{color:inherit}button,a{touch-action:manipulation}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .skip{position:absolute;left:-999px}.skip:focus{left:16px;top:12px;background:var(--paper);padding:10px 14px;z-index:100;border-radius:8px}
+    header{position:sticky;top:0;z-index:50;background:rgba(247,249,252,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:Montserrat,sans-serif;font-weight:800;color:var(--navy)}.brand-logo{display:block;width:auto;height:52px;max-width:270px;object-fit:contain}.brand small{display:block;font:600 10px/1.1 "Source Sans 3";letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}.navlinks{display:flex;align-items:center;gap:24px}.navlinks>a:not(.btn){font-size:16px;text-decoration:none;font-weight:600}.menu{display:none;border:0;background:none;font-size:28px;color:var(--navy)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:12px;padding:13px 20px;font-weight:700;text-decoration:none;cursor:pointer;transition:.2s transform,.2s box-shadow;background:var(--teal);color:var(--paper)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,166,166,.22)}.btn.secondary{background:transparent;color:var(--navy);border:1px solid rgba(16,42,67,.42)}.btn.amber{background:var(--amber);color:var(--navy)}
+    .hero{overflow:hidden;background:var(--paper);padding:34px 0 54px}.hero-banner-wrap{width:min(1440px,calc(100% - 28px));margin:0 auto;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:var(--paper)}.hero-banner{display:block;width:100%;height:auto;object-fit:contain}.demo-badge{display:none;padding:11px 18px;background:var(--amber);color:var(--navy);border-top:3px solid var(--navy);font:700 14px/1.35 Montserrat,sans-serif;text-align:center}.demo-badge.show{display:block}.hero-accessible{width:min(1160px,calc(100% - 40px));margin:28px auto 0;display:flex;justify-content:space-between;align-items:center;gap:26px}.hero-accessible-copy{max-width:760px}.hero-accessible h1{font-size:clamp(34px,4.7vw,58px);margin:0 0 12px}.hero-accessible .lead{margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--teal);text-transform:uppercase;letter-spacing:.12em;font-weight:700;font-size:14px}.dot{width:8px;height:8px;border-radius:50%;background:var(--amber)}h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--navy);margin:0 0 18px;line-height:1.12}h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.045em;margin-top:18px}h2{font-size:clamp(30px,4vw,47px);letter-spacing:-.025em}.lead{font-size:23px;max-width:650px;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.proof{display:flex;gap:18px;flex-wrap:wrap;margin-top:32px;font-size:15px;color:var(--muted)}.proof span:before{content:"✓";color:var(--teal);font-weight:800;margin-right:6px}
+    .trace-card{position:relative;background:var(--navy);color:var(--paper);border-radius:30px;padding:34px;box-shadow:var(--shadow);min-height:440px}.trace-card h3{color:var(--paper);font-size:25px}.trace{margin-top:30px;display:grid;gap:19px}.trace-row{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}.trace-row b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--teal);color:var(--paper)}.trace-row p{margin:2px 0;color:rgba(247,249,252,.82)}.trace-row strong{display:block;color:var(--paper)}.result-tag{margin-top:25px;border-left:4px solid var(--amber);background:rgba(247,249,252,.08);padding:16px;border-radius:0 12px 12px 0}
+    section{padding:92px 0}.section-head{max-width:760px;margin-bottom:44px}.kicker{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:14px}.sub{color:var(--muted);font-size:20px}.pain-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:30px}.pain-tabs{display:grid;gap:12px}.pain-tab{text-align:left;padding:18px;border:1px solid var(--line);background:var(--paper);border-radius:14px;font:700 17px "Source Sans 3";color:var(--navy);cursor:pointer}.pain-tab[aria-selected="true"]{border-color:var(--teal);background:rgba(0,166,166,.10);box-shadow:inset 4px 0 var(--teal)}.pain-panel{background:var(--paper);border-radius:var(--radius);padding:34px;border:1px solid var(--line)}.pain-panel h3{font-size:27px}.steps{counter-reset:step;display:grid;gap:14px;margin:25px 0}.step{counter-increment:step;display:grid;grid-template-columns:38px 1fr;gap:12px}.step:before{content:counter(step);display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--navy);color:var(--paper);font-weight:700}.service-pill{display:inline-flex;padding:8px 12px;border-radius:99px;background:rgba(244,185,66,.28);color:var(--navy);font-weight:700;font-size:15px}
+    .method{background:var(--navy);color:rgba(247,249,252,.82)}.method h2,.method h3{color:var(--paper)}.method .kicker{color:var(--teal)}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.method-card{padding:25px;border-radius:18px;background:rgba(247,249,252,.07);border:1px solid rgba(247,249,252,.12)}.method-card b{font-family:Montserrat;font-size:38px;color:var(--amber)}.method-card p{margin-bottom:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{position:relative;padding:26px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}.service:before{content:"";display:block;width:42px;height:5px;background:var(--teal);border-radius:9px;margin-bottom:20px}.service h3{font-size:21px}.service p{color:var(--muted);font-size:16px}.service strong{color:var(--teal)}
+    .evidence{background:var(--paper)}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.labels{display:grid;grid-template-columns:1fr 1fr;gap:12px}.label{background:var(--paper);padding:20px;border-radius:14px;border:1px solid var(--line)}.label b{display:block;color:var(--teal);font-family:Montserrat}.label p{margin:5px 0 0;font-size:15px;color:var(--muted)}
+    .commission{border-radius:var(--radius);padding:34px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}.commission strong{font:800 46px Montserrat;color:var(--navy)}.note{font-size:15px;color:var(--muted)}.faq{max-width:860px}.faq details{border-bottom:1px solid var(--line);padding:19px 0}.faq summary{cursor:pointer;font:700 19px Montserrat;color:var(--navy)}.faq p{color:var(--muted)}
+    .cta{padding-top:20px}.cta-box{background:var(--teal);border-radius:30px;padding:52px;color:var(--paper);display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.cta-box h2{color:var(--paper)}.cta-box p{margin:0;color:var(--paper)}.contact-note{margin-top:16px;font-size:14px;color:var(--muted);display:none}.contact-note.show{display:block}.contact-group{display:flex;gap:10px;flex-wrap:wrap}
+    footer{background:var(--navy);color:rgba(247,249,252,.78);padding:48px 0 28px;margin-top:92px}.foot{display:grid;grid-template-columns:1fr auto;gap:30px}.foot a{color:var(--paper)}.legal{border-top:1px solid rgba(247,249,252,.18);margin-top:30px;padding-top:20px;font-size:14px}
+    :focus-visible{outline:3px solid var(--amber);outline-offset:3px}@media(max-width:900px){.hero-grid,.pain-layout,.evidence-grid{grid-template-columns:1fr}.hero{padding-top:22px}.hero-accessible{align-items:flex-start;flex-direction:column}.hero-actions{justify-content:flex-start}.hero-banner-wrap{border-radius:20px}.brand-logo{height:45px;max-width:230px}.services{grid-template-columns:1fr 1fr}.method-grid{grid-template-columns:1fr 1fr}.trace-card{min-height:auto}.cta-box{grid-template-columns:1fr}.navlinks{position:absolute;display:none;top:78px;left:0;right:0;background:var(--paper);padding:22px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.menu{display:block}}@media(max-width:580px){body{font-size:17px}.wrap{width:min(100% - 26px,1160px)}nav{height:68px}.brand-logo{height:38px;max-width:190px}.hero-banner-wrap{width:calc(100% - 18px);border-radius:14px}.demo-badge{padding:10px 12px;font-size:12px}.hero,section{padding:48px 0}h1{font-size:40px}.lead{font-size:20px}.hero-actions,.hero-actions .btn{width:100%}.actions .btn{width:100%}.services,.method-grid,.labels{grid-template-columns:1fr}.trace-card,.pain-panel,.cta-box{padding:25px}.proof{display:grid}.foot{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header>
+    <nav class="wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="TRAZA Growth, inicio">
+        <img id="site-logo" class="brand-logo" src="./assets/traza-growth-logo-horizontal.png" width="1800" height="600" alt="TRAZA Growth — Ventas que se pueden demostrar">
+      </a>
+      <button class="menu" aria-expanded="false" aria-controls="navlinks" aria-label="Abrir menú">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#soluciones">Soluciones</a><a href="#metodo">Método</a><a href="#servicios">Servicios</a><a href="#preguntas">Preguntas</a>
+        <a class="btn contact-link" href="#contacto">Solicitar diagnóstico</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-banner-wrap">
+        <img id="site-banner" class="hero-banner" src="./assets/traza-growth-banner.png" width="2033" height="774" fetchpriority="high" alt="TRAZA Growth: detectamos oportunidades de crecimiento y las convertimos en ventas que se pueden demostrar.">
+        <span id="demo-badge" class="demo-badge">DEMO VISUAL — Ejemplo de presentación. No representa un resultado comercial real de TRAZA.</span>
+      </div>
+      <div class="hero-accessible">
+        <div class="hero-accessible-copy">
+          <span class="eyebrow"><i class="dot"></i>Socio de crecimiento comercial</span>
+          <h1 id="site-hero-title">Encuentra dónde se pierden tus ventas</h1>
+          <p class="lead" id="site-hero-subtitle">Evaluamos el camino de compra, aplicamos una mejora concreta y medimos el resultado con evidencia que tú puedes revisar.</p>
+        </div>
+        <div class="hero-actions"><a class="btn amber contact-link" href="#contacto">Solicitar diagnóstico inicial</a><a class="btn secondary" href="#metodo">Conocer el método</a></div>
+      </div>
+    </section>
+
+    <section id="soluciones">
+      <div class="wrap">
+        <div class="section-head"><span class="kicker">Elige tu problema principal</span><h2>¿Qué está frenando hoy a tu negocio?</h2><p class="sub">Selecciona una situación y mira el primer plan práctico que aplicaríamos.</p></div>
+        <div class="pain-layout">
+          <div class="pain-tabs" role="tablist" aria-label="Problemas comerciales">
+            <button class="pain-tab" role="tab" aria-selected="true" data-pain="ventas">No vendo lo suficiente</button>
+            <button class="pain-tab" role="tab" aria-selected="false" data-pain="clientes">No consigo nuevos clientes</button>
+            <button class="pain-tab" role="tab" aria-selected="false" data-pain="cierre">Recibo consultas, pero no compran</button>
+            <button class="pain-tab" role="tab" aria-selected="false" data-pain="regreso">Mis clientes no regresan</button>
+          </div>
+          <div class="pain-panel" id="pain-panel" role="tabpanel" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo">
+      <div class="wrap">
+        <div class="section-head"><span class="kicker">Método TRAZA</span><h2>Un proceso simple, medible y repetible</h2><p>Trabajamos por etapas para no gastar a ciegas.</p></div>
+        <div class="method-grid">
+          <article class="method-card"><b>01</b><h3>Escuchar</h3><p>Entendemos el negocio, sus metas, margen y capacidad real.</p></article>
+          <article class="method-card"><b>02</b><h3>Medir</h3><p>Definimos la situación inicial: ventas, consultas y conversión.</p></article>
+          <article class="method-card"><b>03</b><h3>Mapear</h3><p>Seguimos el recorrido desde que alguien descubre el negocio hasta que compra.</p></article>
+          <article class="method-card"><b>04</b><h3>Priorizar</h3><p>Elegimos la fuga con mayor impacto y una solución viable.</p></article>
+          <article class="method-card"><b>05</b><h3>Probar</h3><p>Ejecutamos un piloto pequeño, con fecha, presupuesto y criterio de éxito.</p></article>
+          <article class="method-card"><b>06</b><h3>Verificar</h3><p>Comparamos la evidencia y decidimos si ajustar, detener o escalar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head"><span class="kicker">Soluciones</span><h2>La ayuda correcta para cada etapa</h2></div>
+        <div class="services">
+          <article class="service"><h3>TRAZA Diagnóstico</h3><p>Para encontrar fugas antes de invertir más.</p><strong>Incluye:</strong><p>línea base, mapa de compra y prioridad de mejora.</p></article>
+          <article class="service"><h3>TRAZA Piloto</h3><p>Para probar una solución con riesgo controlado.</p><strong>Incluye:</strong><p>oferta, campaña, seguimiento y criterio de éxito.</p></article>
+          <article class="service"><h3>TRAZA Crecimiento</h3><p>Para convertir un piloto útil en un sistema constante.</p><strong>Incluye:</strong><p>embudo, automatización, control y optimización.</p></article>
+          <article class="service"><h3>TRAZA Lealtad</h3><p>Para lograr que los clientes vuelvan y recomienden.</p><strong>Incluye:</strong><p>recompra, referidos, mensajes y medición de valor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence">
+      <div class="wrap evidence-grid">
+        <div>
+          <span class="kicker">Transparencia</span><h2>Cada afirmación tiene una etiqueta</h2>
+          <p class="sub">Separamos lo que sabemos de lo que todavía debemos probar. Así protegemos tu dinero y nuestra credibilidad.</p>
+          <div class="labels">
+            <div class="label"><b>HECHO</b><p>Dato confirmado por una fuente verificable.</p></div>
+            <div class="label"><b>HIPÓTESIS</b><p>Idea razonable que aún necesita prueba.</p></div>
+            <div class="label"><b>PRUEBA</b><p>Experimento con plazo y meta definidos.</p></div>
+            <div class="label"><b>RESULTADO</b><p>Efecto medido después de ejecutar.</p></div>
+          </div>
+        </div>
+        <aside class="commission">
+          <span class="kicker">Intereses alineados</span><h3>Un modelo que comparte el resultado</h3>
+          <strong>15–30%</strong>
+          <p>La comisión puede acordarse sobre ventas adicionales atribuibles y verificadas, según el alcance y la responsabilidad asumida.</p>
+          <p class="note">El porcentaje, la fuente oficial de ventas, el periodo y las reglas de atribución se fijan por escrito antes de comenzar. No prometemos resultados garantizados.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="wrap faq">
+        <div class="section-head"><span class="kicker">Preguntas frecuentes</span><h2>Antes de trabajar juntos</h2></div>
+        <details><summary>¿TRAZA Growth es una agencia de publicidad?</summary><p>No exactamente. La publicidad puede ser una herramienta, pero nuestro trabajo comienza en el negocio: oferta, recorrido del cliente, seguimiento, medición y repetición.</p></details>
+        <details><summary>¿Garantizan un número de ventas?</summary><p>No. Primero medimos, formulamos una hipótesis y hacemos una prueba controlada. Presentamos resultados con evidencia, incluyendo aquello que no funcionó.</p></details>
+        <details><summary>¿Cómo saben qué venta generó TRAZA?</summary><p>Acordamos una fuente oficial y un método de atribución antes del piloto: códigos, formularios, enlaces, registro de contactos o conciliación de ventas.</p></details>
+        <details><summary>¿Debo invertir mucho desde el inicio?</summary><p>No. Preferimos comenzar con el experimento más pequeño que pueda producir un aprendizaje útil.</p></details>
+        <details><summary>¿Con qué negocios trabajan?</summary><p>La primera etapa está enfocada en negocios locales de Ecuador, especialmente restaurantes, cafeterías, comercios y servicios con ventas verificables.</p></details>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="wrap">
+        <div class="cta-box">
+          <div><span class="eyebrow" style="color:var(--paper)"><i class="dot"></i>Primer paso</span><h2>Identifiquemos tu fuga principal</h2><p>Cuéntanos qué vendes, cómo llegan tus clientes y qué te gustaría mejorar.</p></div>
+          <div class="contact-group"><a class="btn amber" id="whatsapp-btn" href="#">Hablar por WhatsApp</a><a class="btn secondary" style="color:var(--paper);border-color:var(--paper)" id="email-btn" href="#">Enviar correo</a></div>
+        </div>
+        <p class="contact-note" id="contact-note">El canal de correo electrónico todavía no ha sido configurado.</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><div class="foot"><div><a id="footer-brand" class="brand" style="color:var(--paper)" href="#inicio">TRAZA Growth</a><p id="footer-promise">Ventas que se pueden demostrar.</p></div><div><strong>Un sistema de Nelson Ojeda</strong><br><span id="footer-descriptor">Socio de crecimiento comercial</span></div></div><div class="legal">© <span id="year"></span> <span id="legal-brand">TRAZA Growth</span>. Los resultados dependen del punto de partida, la ejecución y las condiciones de cada negocio.</div></div></footer>
+  <script>
+    /*
+      CONFIGURACIÓN DEL SITIO
+      Para realizar cambios futuros, edita solamente los valores de este bloque.
+      La etiqueta DEMO desaparece únicamente al cambiar bannerIsDemo a false.
+    */
+    window.TRAZA_SITE_CONFIG = {
+      brandName: "TRAZA Growth",
+      descriptor: "Socio de crecimiento comercial",
+      promise: "Ventas que se pueden demostrar",
+      siteTitle: "TRAZA Growth | Ventas que se pueden demostrar",
+      siteDescription: "TRAZA Growth detecta dónde se pierden tus ventas, aplica mejoras concretas y mide resultados con evidencia.",
+      themeColor: "#102A43",
+      heroTitle: "Encuentra dónde se pierden tus ventas",
+      heroSubtitle: "Evaluamos el camino de compra, aplicamos una mejora concreta y medimos el resultado con evidencia que tú puedes revisar.",
+      assets: {
+        logo: "./assets/traza-growth-logo-horizontal.png",
+        banner: "./assets/traza-growth-banner.png",
+        favicon: "./assets/traza-growth-favicon.png"
+      },
+      bannerIsDemo: true,
+      demoLabel: "DEMO VISUAL — Ejemplo de presentación. No representa un resultado comercial real de TRAZA.",
+      whatsapp: "593997912927",
+      email: "",
+      whatsappMessage: "Hola, quiero solicitar un diagnóstico inicial para mi negocio.",
+      contactUrls: { whatsapp: "", email: "" }
+    };
+
+    const SITE_CONFIG = window.TRAZA_SITE_CONFIG;
+
+    function applySiteConfig(){
+      const logo=document.querySelector("#site-logo");
+      const banner=document.querySelector("#site-banner");
+      const favicon=document.querySelector("#site-favicon");
+      const apple=document.querySelector("#site-apple-icon");
+      const demo=document.querySelector("#demo-badge");
+      const title=document.querySelector("#site-hero-title");
+      const subtitle=document.querySelector("#site-hero-subtitle");
+      const metaDescription=document.querySelector('meta[name="description"]');
+      const metaTheme=document.querySelector('meta[name="theme-color"]');
+      if(logo && SITE_CONFIG.assets.logo){logo.src=SITE_CONFIG.assets.logo;logo.alt=`${SITE_CONFIG.brandName} — ${SITE_CONFIG.promise}`;}
+      if(banner && SITE_CONFIG.assets.banner){banner.src=SITE_CONFIG.assets.banner;banner.alt=`${SITE_CONFIG.brandName}: ${SITE_CONFIG.promise}.`;}
+      if(favicon && SITE_CONFIG.assets.favicon) favicon.href=SITE_CONFIG.assets.favicon;
+      if(apple && SITE_CONFIG.assets.favicon) apple.href=SITE_CONFIG.assets.favicon;
+      if(title) title.textContent=SITE_CONFIG.heroTitle;
+      if(subtitle) subtitle.textContent=SITE_CONFIG.heroSubtitle;
+      if(demo){demo.textContent=SITE_CONFIG.demoLabel||"DEMO";demo.classList.toggle("show",!!SITE_CONFIG.bannerIsDemo);}
+      document.title=SITE_CONFIG.siteTitle;
+      if(metaDescription) metaDescription.content=SITE_CONFIG.siteDescription;
+      if(metaTheme) metaTheme.content=SITE_CONFIG.themeColor;
+      document.querySelector("#footer-brand").textContent=SITE_CONFIG.brandName;
+      document.querySelector("#footer-promise").textContent=SITE_CONFIG.promise;
+      document.querySelector("#footer-descriptor").textContent=SITE_CONFIG.descriptor;
+      document.querySelector("#legal-brand").textContent=SITE_CONFIG.brandName;
+    }
+    applySiteConfig();
+
+    const pains = {
+      ventas:{title:"Tus ventas no alcanzan la meta",intro:"Primero debemos saber si el problema está en atraer, convencer, cerrar o lograr recompra.",steps:["Comparar ventas, consultas y cierres de las últimas semanas.","Detectar el punto exacto donde más personas abandonan.","Probar una mejora concreta y medir la diferencia."],service:"Recomendación: TRAZA Diagnóstico"},
+      clientes:{title:"Pocas personas nuevas descubren tu negocio",intro:"No siempre hace falta publicar más: debemos elegir el público, mensaje y canal correctos.",steps:["Definir a quién ayudas mejor y por qué debería elegirte.","Crear una oferta clara y una ruta corta para consultar o comprar.","Probar dos canales y conservar el que genere clientes verificables."],service:"Recomendación: TRAZA Piloto"},
+      cierre:{title:"Hay interés, pero la conversación no termina en venta",intro:"La fuga suele estar en la respuesta, la confianza, la oferta o el seguimiento.",steps:["Medir cuántas consultas reciben respuesta y cuánto tardan.","Revisar mensajes, objeciones, precios y formas de pago.","Aplicar un guion simple y hacer seguimiento en tiempos acordados."],service:"Recomendación: TRAZA Crecimiento"},
+      regreso:{title:"Los clientes compran una vez y desaparecen",intro:"La segunda venta suele costar menos que conseguir un desconocido, pero necesita un sistema.",steps:["Identificar quién compró, qué compró y cuándo podría volver.","Crear un motivo útil para regresar o recomendar.","Enviar mensajes con permiso y medir recompra y referidos."],service:"Recomendación: TRAZA Lealtad"}
+    };
+    const panel=document.querySelector("#pain-panel");
+    function renderPain(key){const p=pains[key];panel.innerHTML=`<h3>${p.title}</h3><p>${p.intro}</p><div class="steps">${p.steps.map(s=>`<div class="step"><span>${s}</span></div>`).join("")}</div><span class="service-pill">${p.service}</span>`;}
+    document.querySelectorAll(".pain-tab").forEach(tab=>tab.addEventListener("click",()=>{document.querySelectorAll(".pain-tab").forEach(t=>t.setAttribute("aria-selected","false"));tab.setAttribute("aria-selected","true");renderPain(tab.dataset.pain);}));renderPain("ventas");
+    const menu=document.querySelector(".menu"),navlinks=document.querySelector("#navlinks");menu.addEventListener("click",()=>{const open=navlinks.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});navlinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{navlinks.classList.remove("open");menu.setAttribute("aria-expanded","false");}));
+    const note=document.querySelector("#contact-note"),wa=document.querySelector("#whatsapp-btn"),email=document.querySelector("#email-btn");
+    const whatsappUrl=SITE_CONFIG.contactUrls.whatsapp||(SITE_CONFIG.whatsapp?`https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`:"");
+    const emailUrl=SITE_CONFIG.contactUrls.email||(SITE_CONFIG.email?`mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent("Diagnóstico inicial TRAZA Growth")}`:"");
+    if(whatsappUrl){wa.href=whatsappUrl;wa.target="_blank";wa.rel="noopener";}else{wa.addEventListener("click",e=>{e.preventDefault();note.classList.add("show");note.scrollIntoView({behavior:"smooth",block:"nearest"});});}
+    if(emailUrl){email.href=emailUrl;}else{email.addEventListener("click",e=>{e.preventDefault();note.classList.add("show");});}
+    document.querySelectorAll(".contact-link").forEach(a=>a.addEventListener("click",()=>setTimeout(()=>note.classList.toggle("show",!SITE_CONFIG.whatsapp&&!SITE_CONFIG.email),400)));
+    document.querySelector("#year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
